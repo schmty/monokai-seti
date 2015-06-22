@@ -4,7 +4,7 @@
   "version": "0.7.0",
   "private": true,
   "description": "A monokai theme for the seti ui",
-  "repository": "https://github.com/schmitzjake/monokai-seti",
+  "repository": "https://github.com/schmittyjd/monokai-seti",
   "license": "MIT",
   "engines": {
     "atom": ">0.39.0"

@@ -97,13 +97,17 @@
   color: #E6DB74;
 }
 
-.syntax--constant {
-  &.syntax--numeric,
-  &.syntax--language,
-  &.syntax--character,
-  &.syntax--other {
-    color: #AE81FF;
-  }
+.syntax--constant.syntax--numeric {
+  color: #AE81FF;
+}
+
+.syntax--constant.syntax--language {
+  color: #AE81FF;
+}
+
+.syntax--constant.syntax--character,
+.syntax--constant.syntax--other {
+  color: #AE81FF;
 }
 
 .syntax--keyword {
@@ -112,44 +116,30 @@
 
 .syntax--storage {
   color: #F92672;
-
-  &.syntax--type {
-    font-style: italic;
-    color: #66D9EF;
-  }
 }
 
-.syntax--entity {
-  &.syntax--other {
-    &.syntax--inherited-class {
-      font-style: italic;
-      text-decoration: underline;
-      color: #A6E22E;
-    }
+.syntax--storage.syntax--type {
+  font-style: italic;
+  color: #66D9EF;
+}
 
-    &.syntax--attribute-name {
-      color: #A6E22E;
-    }
-  }
+.syntax--entity.syntax--name.syntax--class {
+  text-decoration: underline;
+  color: #A6E22E;
+}
 
-  &.syntax--name {
-    &.syntax--class {
-      text-decoration: underline;
-      color: #A6E22E;
-    }
+.syntax--entity.syntax--other.syntax--inherited-class {
+  font-style: italic;
+  text-decoration: underline;
+  color: #A6E22E;
+}
 
-    &.syntax--function {
-      color: #A6E22E;
-    }
+.syntax--entity.syntax--name.syntax--function {
+  color: #A6E22E;
+}
 
-    &.syntax--instance {
-      color: #66D9EF;
-    }
-
-    &.syntax--tag {
-      color: #F92672;
-    }
-  }
+.syntax--entity.syntax--name.syntax--instance {
+  color: #66D9EF;
 }
 
 .syntax--variable.syntax--parameter {
@@ -157,28 +147,36 @@
   color: #FD971F;
 }
 
-.syntax--support {
-  &.syntax--function,
-  &.syntax--constant,
-  &.syntax--type,
-  &.syntax--class {
-    color: #66D9EF;
-  }
+.syntax--entity.syntax--name.syntax--tag {
+  color: #F92672;
+}
 
-  &.syntax--type,
-  &.syntax--class {
-    font-style: italic;
-  }
+.syntax--entity.syntax--other.syntax--attribute-name {
+  color: #A6E22E;
+}
+
+.syntax--support.syntax--function {
+  color: #66D9EF;
+}
+
+.syntax--support.syntax--constant {
+  color: #66D9EF;
+}
+
+.syntax--support.syntax--type,
+.syntax--support.syntax--class {
+  font-style: italic;
+  color: #66D9EF;
 }
 
 .syntax--invalid {
   color: #F8F8F0;
   background-color: #F92672;
+}
 
-  &.syntax--deprecated {
-    color: #F8F8F0;
-    background-color: #AE81FF;
-  }
+.syntax--invalid.syntax--deprecated {
+  color: #F8F8F0;
+  background-color: #AE81FF;
 }
 
 // Jade syntax
